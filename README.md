@@ -1,8 +1,8 @@
-# Research workspace template
+# ATAG research
 
-A reusable starting point workspace for research and documentation projects: site builder, link checking, linting and formatting, CI.
+A shared workspace for research on the [Authoring Tool Accessibility Guidelines (ATAG)](https://www.w3.org/TR/ATAG20/), the ATAG Community Group, and working documents. Built for publishing at <https://thibaudcolas.github.io/atag-research/>.
 
-This is a template, with placeholder content in a few places like `docs/`. Replace it with real content when using the template.
+Source material (meeting minutes, provisions data, minutes text conversions) lives in `local/`, which is not part of the published site.
 
 ## What's included
 
@@ -44,16 +44,14 @@ just format    # Auto-format
 just check-links  # Link check (requires lychee)
 ```
 
-## Customization checklist
+## Adding content
 
-When starting a new project from this template:
+1. Put reusable background material in `docs/knowledge-base/`, and ATAG-specific research in `docs/atag-cg/`.
+2. Add each page to both `nav` and the `llmstxt` `sections` mapping in `mkdocs.yml`.
+3. Keep source material in `local/`; reference it from research notes rather than publishing it verbatim.
+4. Every skill in `.agents/skills/` is published with the docs, so keep local-only material out of it.
 
-1. Rename the project in `pyproject.toml`, `package.json`, and `README.md`.
-2. Set `repo_url`, `site_url`, `repo_name` in `mkdocs.yml` (search for `thibaudcolas/research-workspace-template` placeholders).
-3. Replace `docs/` placeholder content with real content, and update `nav` plus the `llmstxt` `sections` in `mkdocs.yml` to match.
-4. Update `site_name`, `site_description`, logos, and favicon in `docs/theme/`.
-5. Enable GitHub Pages from GitHub Actions in the repository settings (the workflow deploys on push to `main`).
-6. Adapt the starter skill in `.agents/skills/research-workspace/` to your workspace. Every skill in `.agents/skills/` is published with the docs.
+GitHub Pages deploys from GitHub Actions on push to `main`; enable it in the repository settings once.
 
 ## License
 

@@ -1,7 +1,7 @@
 [project]
-name = "project-workspace"
+name = "atag-research"
 version = "0.0.0"
-description = "A shared workspace for project documentation."
+description = "Research workspace for the ATAG Community Group."
 readme = "README.md"
 license = "MIT"
 requires-python = ">=3.14"

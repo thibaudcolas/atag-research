@@ -1,6 +1,6 @@
 # Documentation features
 
-The PSF supports research notes with a source.[^source]
+The ATAG guidelines support research notes with a source.[^source]
 
 | Finding         | Status   |
 | --------------- | -------- |

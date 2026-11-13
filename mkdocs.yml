@@ -7,10 +7,9 @@
 # Convention: most changes to `markdown_extensions`, `plugins`, and theme `features` need a comment explaining what the option does.
 # ---------------------------------------------------------------------------
 
-site_name: Project workspace
-# Replace `thibaudcolas/research-workspace-template` with the real GitHub slug.
-repo_url: https://github.com/thibaudcolas/research-workspace-template
-site_url: https://thibaudcolas.github.io/research-workspace-template/
+site_name: ATAG research
+repo_url: https://github.com/thibaudcolas/atag-research
+site_url: https://thibaudcolas.github.io/atag-research/
 docs_dir: docs
 # Shared abbreviation definitions are read by snippets, not rendered as a page.
 exclude_docs: |
@@ -24,7 +23,7 @@ watch:
 # "Edit on GitHub" links point to the source Markdown on the main branch.
 edit_uri: edit/main/docs
 
-site_description: A shared workspace for project documentation.
+site_description: Research workspace for the ATAG Community Group.
 repo_name: REPO
 # Avoid clashes with other docs servers running on the default 8000 port.
 dev_addr: localhost:8001
@@ -182,8 +181,8 @@ plugins:
           - contributing/architecture.md
         Knowledge base:
           - knowledge-base/*.md
-        Project A:
-          - project-a/*.md
+        ATAG CG:
+          - atag-cg/*.md
   # Collect page and folder tags into the listing marked in tags.md.
   - tags
 
@@ -209,5 +208,5 @@ nav:
       - Project architecture: contributing/architecture.md
   - Knowledge base:
       - knowledge-base/README.md
-  - Project A:
-      - project-a/README.md
+  - ATAG CG:
+      - atag-cg/README.md

@@ -1,6 +1,6 @@
 ---
 name: research-workspace
-description: Maintain documentation in a repository based on research-workspace-template. Use when adding research notes, knowledge-base pages, or project documentation to this MkDocs workspace.
+description: Maintain the ATAG research workspace (thibaudcolas/atag-research). Use when adding research notes, knowledge-base pages, or ATAG CG documentation to this MkDocs site.
 license: MIT
 metadata:
   version: "1.0.0"
@@ -10,7 +10,7 @@ metadata:
 
 Work from the target repository's `AGENTS.md`, `docs/contributing/README.md`, and `docs/contributing/style-guide.md` for its current structure, commands, and writing conventions.
 
-Place reusable knowledge in `docs/knowledge-base/` and project-specific research in the relevant project folder. Follow the repository's existing sections; `project-a` is a template example. Section landing pages use `README.md` so they work on GitHub as well as the docs site.
+Place reusable knowledge in `docs/knowledge-base/`, and ATAG-specific research in `docs/atag-cg/`. Unpublished source material (meeting minutes, provisions data, downloaded context) lives in `local/`; cite it rather than copying it into the site. Section landing pages use `README.md` so they work on GitHub as well as the docs site.
 
 When adding, moving, or renaming documentation, update both `nav` and the `llmstxt.sections` mapping in `mkdocs.yml`. Use relative Markdown links between documentation pages. Preserve source citations and distinguish findings from assumptions in research notes.
 

@@ -131,7 +131,9 @@ class DocumentationTests(unittest.TestCase):
         abbreviations = {
             content(node): node.get("title") for node in self.document.iter("abbr")
         }
-        self.assertEqual(abbreviations["PSF"], "Python Software Foundation")
+        self.assertEqual(
+            abbreviations["ATAG"], "Authoring Tool Accessibility Guidelines"
+        )
 
     def test_footnote_links_resolve_in_both_directions(self) -> None:
         ids = {node.get("id") for node in self.document.iter() if node.get("id")}

@@ -20,8 +20,8 @@ See [Project architecture](architecture.md) for how the workspace and its toolin
 Clone the repository, configure the git hooks, then initialize with `just init`.
 
 ```sh
-git clone git@github.com:thibaudcolas/research-workspace-template.git
-cd REPO/
+git clone git@github.com:thibaudcolas/atag-research.git
+cd atag-research/
 # Install everything.
 just init
 ```
@@ -85,7 +85,7 @@ Every docs page must be listed in `nav`, or explicitly opted out:
 
 ```yaml
 not_in_nav: |
-  /project-a/supporting-notes.md
+  /atag-cg/supporting-notes.md
 ```
 
 This only suppresses navigation warnings; the page remains published and searchable. Use the [search controls](style-guide.md#search-controls) to adjust search separately.
