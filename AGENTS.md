@@ -15,6 +15,7 @@ See [docs/contributing/README.md#commands](docs/contributing/README.md#commands)
 - `just format` – auto-format
 - `just check-links` – check links in Markdown files
 - `just build-docs` – build the documentation (strict)
+- `just sync-upstream` – sync the upstream w3c-cg/atag repo, issues, pull requests, discussions, and wiki into `local/upstream/`
 
 ## Project tools
 

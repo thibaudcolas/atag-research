@@ -28,6 +28,26 @@ just init
 
 Initialization installs Python and pnpm dependencies and downloads the pinned Vale binary for prose checks. This first run requires network access; the checked-in Vale rules need no separate style download.
 
+#### Upstream sources
+
+Research depends on the current state of the upstream [w3c-cg/atag](https://github.com/w3c-cg/atag) repository, its issues, pull requests, discussions, and wiki. `just sync-upstream` mirrors them read-only into the git-ignored `local/upstream/` directory, which research notes read from:
+
+| Path                         | Contents                                         |
+| ---------------------------- | ------------------------------------------------ |
+| `local/upstream/atag/`       | Code and minutes, checked out on upstream `main` |
+| `local/upstream/gh-md/atag/` | Issues, pull requests, and discussions           |
+| `local/upstream/atag-wiki/`  | Wiki pages                                       |
+
+Install the tools the sync uses beyond `git`, which is already required:
+
+```sh
+brew install gh           # GitHub CLI
+gh auth login
+gh extension install jackchuka/gh-md
+```
+
+Run `just sync-upstream` after installing, and whenever you need current upstream content; it is incremental and safe to re-run. Sources whose upstream feature or tooling is unavailable are skipped with a message. Commit and push nothing from `local/upstream/`. Refresh it before citing upstream material in a research note.
+
 ### Commands
 
 - `just help`: See what commands are available.
@@ -40,6 +60,7 @@ Initialization installs Python and pnpm dependencies and downloads the pinned Va
 - `just build-docs`: Build the documentation.
 - `just test`: Test agent skill publishing and documentation rendering.
 - `just docs`: Build the documentation and serve it locally.
+- `just sync-upstream`: Sync the upstream repository, issues, pull requests, discussions, and wiki into `local/upstream/`. See [Upstream sources](#upstream-sources).
 
 ## Coding style & conventions
 
@@ -85,7 +106,7 @@ Every docs page must be listed in `nav`, or explicitly opted out:
 
 ```yaml
 not_in_nav: |
-  /atag-cg/supporting-notes.md
+  /cg-contributions/supporting-notes.md
 ```
 
 This only suppresses navigation warnings; the page remains published and searchable. Use the [search controls](style-guide.md#search-controls) to adjust search separately.

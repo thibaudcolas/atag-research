@@ -111,7 +111,6 @@ markdown_extensions:
   # Lets us attach `{ .class }` to block/inline elements – used by
   # annotations and a few callouts.
   - attr_list
-  - def_list
   - footnotes
   # Allow Markdown to be written inside HTML blocks (used by custom theme
   # overrides in `docs/theme`).
@@ -181,8 +180,14 @@ plugins:
           - contributing/architecture.md
         Knowledge base:
           - knowledge-base/*.md
+        ATAG:
+          - knowledge-base/atag/README.md
+        ATAG WG:
+          - knowledge-base/atag-wg/*.md
         ATAG CG:
-          - atag-cg/*.md
+          - knowledge-base/atag-cg/*.md
+        CG contributions:
+          - cg-contributions/*.md
   # Collect page and folder tags into the listing marked in tags.md.
   - tags
 
@@ -208,5 +213,13 @@ nav:
       - Project architecture: contributing/architecture.md
   - Knowledge base:
       - knowledge-base/README.md
-  - ATAG CG:
-      - atag-cg/README.md
+      - ATAG:
+          - knowledge-base/atag/README.md
+      - ATAG WG:
+          - knowledge-base/atag-wg/README.md
+      - ATAG CG:
+          - knowledge-base/atag-cg/README.md
+      - WCAG: knowledge-base/wcag.md
+      - Authoring tools: knowledge-base/authoring-tools.md
+  - CG contributions:
+      - cg-contributions/README.md

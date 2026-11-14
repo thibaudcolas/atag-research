@@ -8,7 +8,9 @@ How to write docs pages and posts for this workspace: tone, headings, callouts, 
 - Use American English spelling.
 - Run `just lint-prose` for the small set of automated terminology and spelling checks. See [Prose rules](quality-assurance.md#prose-rules) for scope and quotation exceptions.
 - Prefer linking to other pages over repeating content.
+- Cite upstream issues, pull requests, and discussions with the `[#12]` shorthand: the definition in `docs/contributing/abbreviations.md` supplies the link and a tooltip with the item title. That list covers every upstream item, and the upstream-sync skill regenerates it.
 - Use [Bulleted lists] when describing more than two comparable things or steps.
+- Never use definition lists, the `term` on one line and `: definition` on the next. Use **Term**: definition on one line, or a [table](#tables) for several terms.
 - One thing per paragraph; don't be afraid of whitespace.
 
 <!-- TODO: Copy or adapt the full style guide from the source workspace (https://github.com/marketing-django/marketing-workspace/blob/main/docs/contributing/style-guide.md), or write one for your project. This placeholder documents the minimum conventions the templates rely on. -->
@@ -38,7 +40,7 @@ tags:
 
 For tags shared by a section, create a `.meta.yml` file in that folder:
 
-```yaml title="docs/atag-cg/.meta.yml"
+```yaml title="docs/cg-contributions/.meta.yml"
 tags:
   - atag
 ```
@@ -106,9 +108,9 @@ This example is relative to `docs/index.md`:
 
 - **ATAG CG**
 
-    Research on ATAG and the ATAG Community Group.
+    Resources from the ATAG Community Group.
 
-    [Read the ATAG CG research](atag-cg/README.md)
+    [Read the ATAG CG resources](knowledge-base/atag-cg/README.md)
 
 </div>
 ```

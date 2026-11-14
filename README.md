@@ -46,7 +46,7 @@ just check-links  # Link check (requires lychee)
 
 ## Adding content
 
-1. Put reusable background material in `docs/knowledge-base/`, and ATAG-specific research in `docs/atag-cg/`.
+1. Put reusable background material in `docs/knowledge-base/`, evergreen upstream references in `docs/knowledge-base/atag/`, `docs/knowledge-base/atag-cg/`, and `docs/knowledge-base/wcag.md`, and the workspace's own CG research in `docs/cg-contributions/`.
 2. Add each page to both `nav` and the `llmstxt` `sections` mapping in `mkdocs.yml`.
 3. Keep source material in `local/`; reference it from research notes rather than publishing it verbatim.
 4. Every skill in `.agents/skills/` is published with the docs, so keep local-only material out of it.

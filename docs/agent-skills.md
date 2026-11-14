@@ -1,6 +1,6 @@
 # Agent skills
 
-This workspace publishes [Agent Skills](https://agentskills.io/) alongside its documentation. The included `research-workspace` skill helps agents maintain the workspace's documentation structure and navigation.
+This workspace publishes [Agent Skills](https://agentskills.io/) alongside its documentation. Three skills support research: `research-workspace` helps agents maintain the workspace's documentation structure and navigation, `upstream-sync` refreshes the local mirror of the upstream ATAG repository, issues, pull requests, discussions, and wiki, then updates affected notes, and `gh-md` helps agents pull, search, edit, and push GitHub issues, pull requests, and discussions as Markdown files with any repository. Skills can ship reference files the build copies with them, such as the `gh-md` command reference next to the `upstream-sync` skill; these are supporting material, not separately published skills.
 
 ## Use a skill
 
@@ -8,7 +8,9 @@ Skills are maintained in the repository's `.agents/skills/` directory. Tools tha
 
 The documentation build also publishes these paths, relative to the site's base URL:
 
-- `.well-known/agent-skills/research-workspace/SKILL.md`: the starter skill as raw Markdown.
+- `.well-known/agent-skills/research-workspace/SKILL.md`: workspace documentation conventions.
+- `.well-known/agent-skills/upstream-sync/SKILL.md`: upstream mirror refresh and follow-up updates.
+- `.well-known/agent-skills/gh-md/SKILL.md`: GitHub issues, pull requests, and discussions as local Markdown files.
 - `.well-known/agent-skills/index.json`: skill descriptions, download URLs, and SHA-256 digests, following the [agent skills discovery proposal](https://github.com/cloudflare/agent-skills-discovery-rfc).
 - `.well-known/ai-catalog.json`: publisher information, skill versions, and absolute download URLs, following [AI Catalog](https://ai-catalog.io/).
 
