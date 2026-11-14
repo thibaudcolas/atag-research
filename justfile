@@ -44,9 +44,9 @@ check-external-links:
 build-docs:
     NO_MKDOCS_2_WARNING=1 uv run mkdocs build --strict
 
-# Sync the upstream w3c-cg/atag repo, issues, PRs, discussions, and wiki into local/upstream/.
+# Sync the upstream w3c-cg/atag and w3c/wcag3 repos, issues, PRs, discussions, and wikis into local/upstream/, then regenerate reference links.
 sync-upstream *args:
-    sh scripts/sync_upstream.sh {{ args }}
+    uv run --script scripts/sync_upstream.py {{ args }}
 
 # Test skill publishing and documentation rendering in temporary builds.
 test:

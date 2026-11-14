@@ -30,13 +30,16 @@ Initialization installs Python and pnpm dependencies and downloads the pinned Va
 
 #### Upstream sources
 
-Research depends on the current state of the upstream [w3c-cg/atag](https://github.com/w3c-cg/atag) repository, its issues, pull requests, discussions, and wiki. `just sync-upstream` mirrors them read-only into the git-ignored `local/upstream/` directory, which research notes read from:
+Research depends on the current state of the upstream [w3c-cg/atag](https://github.com/w3c-cg/atag) and [w3c/wcag3](https://github.com/w3c/wcag3) repositories, their issues, pull requests, discussions, and wikis. `just sync-upstream` mirrors them read-only into the git-ignored `local/upstream/` directory, which research notes read from:
 
-| Path                         | Contents                                         |
-| ---------------------------- | ------------------------------------------------ |
-| `local/upstream/atag/`       | Code and minutes, checked out on upstream `main` |
-| `local/upstream/gh-md/atag/` | Issues, pull requests, and discussions           |
-| `local/upstream/atag-wiki/`  | Wiki pages                                       |
+| Path                                | Contents                                               |
+| ----------------------------------- | ------------------------------------------------------ |
+| `local/upstream/atag/`              | ATAG code and minutes, checked out on upstream `main`  |
+| `local/upstream/gh-md/w3c-cg/atag/` | ATAG issues, pull requests, and discussions            |
+| `local/upstream/atag-wiki/`         | ATAG wiki pages                                        |
+| `local/upstream/wcag3/`             | WCAG 3 code and drafts, checked out on upstream `main` |
+| `local/upstream/gh-md/w3c/wcag3/`   | WCAG 3 issues, pull requests, and discussions          |
+| `local/upstream/wcag3-wiki/`        | WCAG 3 wiki pages                                      |
 
 Install the tools the sync uses beyond `git`, which is already required:
 
@@ -60,7 +63,7 @@ Run `just sync-upstream` after installing, and whenever you need current upstrea
 - `just build-docs`: Build the documentation.
 - `just test`: Test agent skill publishing and documentation rendering.
 - `just docs`: Build the documentation and serve it locally.
-- `just sync-upstream`: Sync the upstream repository, issues, pull requests, discussions, and wiki into `local/upstream/`. See [Upstream sources](#upstream-sources).
+- `just sync-upstream`: Sync both upstream repositories, their issues, pull requests, discussions, and wikis into `local/upstream/`, then regenerate the upstream reference links. Pass `--references-only` to regenerate the links offline. See [Upstream sources](#upstream-sources).
 
 ## Coding style & conventions
 

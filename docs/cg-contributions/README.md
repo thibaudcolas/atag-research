@@ -2,7 +2,14 @@
 
 Research this workspace contributes to the [ATAG Community Group's](../knowledge-base/atag-cg/README.md) work: its [Use Cases and Requirements](https://w3c-cg.github.io/atag/docs/ucr/) draft, the ATAG 2.0 review, and the incubation of guidance for AI authoring tools.
 
-The CG meets regularly and works in public. This workspace keeps copies of the group's minutes, issues, discussions, and draft documents in `local/`, which is not published with this site. Pages here document findings drawn from those sources, with citations. Unpublished sources stay cited rather than copied: the [authoring tools](../knowledge-base/authoring-tools.md) list and the [WCAG 3 provision mapping](../knowledge-base/authoring-tools.md#wcag-3-provisions) summarise what the discussions and minutes establish.
+The CG meets regularly and works in public. This workspace keeps copies of the group's minutes, issues, discussions, and draft documents in `local/`, which is not published with this site. Pages here document findings drawn from those sources, with citations. Unpublished sources stay cited rather than copied: the [authoring tools](../knowledge-base/authoring-tools.md) list and the [WCAG 3 provision mapping](wcag-3-provisions-review.md) summarise what the discussions and minutes establish.
+
+## Pages
+
+- [WCAG 3 provisions review](wcag-3-provisions-review.md): the group's classification exercise, its proposed relationship values, and the open questions.
+- [WCAG 3 provisions relevance](wcag-3-provisions-relevance.md): every provision in the draft, in guideline order, for that review.
+- [Contribution ideas](contribution-ideas/README.md): research this workspace could contribute.
+- [Personal notes](personal-notes.md): informal notes from meetings and brainstorming.
 
 ## Sources
 

@@ -188,6 +188,7 @@ plugins:
           - knowledge-base/atag-cg/*.md
         CG contributions:
           - cg-contributions/*.md
+          - cg-contributions/contribution-ideas/*.md
   # Collect page and folder tags into the listing marked in tags.md.
   - tags
 
@@ -223,3 +224,10 @@ nav:
       - Authoring tools: knowledge-base/authoring-tools.md
   - CG contributions:
       - cg-contributions/README.md
+      - WCAG 3 provisions review: cg-contributions/wcag-3-provisions-review.md
+      - WCAG 3 provisions relevance: cg-contributions/wcag-3-provisions-relevance.md
+      - Contribution ideas:
+          - cg-contributions/contribution-ideas/README.md
+          - Automated audits: cg-contributions/contribution-ideas/automated-audits.md
+          - Benchmarking: cg-contributions/contribution-ideas/benchmarking.md
+      - Personal notes: cg-contributions/personal-notes.md

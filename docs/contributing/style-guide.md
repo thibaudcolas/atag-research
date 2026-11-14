@@ -8,7 +8,7 @@ How to write docs pages and posts for this workspace: tone, headings, callouts, 
 - Use American English spelling.
 - Run `just lint-prose` for the small set of automated terminology and spelling checks. See [Prose rules](quality-assurance.md#prose-rules) for scope and quotation exceptions.
 - Prefer linking to other pages over repeating content.
-- Cite upstream issues, pull requests, and discussions with the `[#12]` shorthand: the definition in `docs/contributing/abbreviations.md` supplies the link and a tooltip with the item title. That list covers every upstream item, and the upstream-sync skill regenerates it.
+- Cite upstream issues, pull requests, and discussions with the `[ATAG#12]` shorthand: the definition in `docs/contributing/abbreviations.md` supplies the link and a tooltip with the item title. The label prefix names the upstream repository, and that list covers every item of a registered repository; the upstream-sync skill regenerates it.
 - Use [Bulleted lists] when describing more than two comparable things or steps.
 - Never use definition lists, the `term` on one line and `: definition` on the next. Use **Term**: definition on one line, or a [table](#tables) for several terms.
 - One thing per paragraph; don't be afraid of whitespace.

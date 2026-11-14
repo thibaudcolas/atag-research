@@ -11,7 +11,7 @@ gh auth login                          # required
 brew install fzf                       # only for interactive browse
 ```
 
-Files live in `~/.gh-md/<owner>/<repo>/{issues,pulls,discussions}/<number>.md`. Override the root with `GH_MD_ROOT` — set it per project when you want the mirror scoped to a workspace. This repo's own upstream, `w3c-cg/atag`, is already mirrored under `local/upstream/gh-md/` by `just sync-upstream`; see [the skill](../SKILL.md) before pulling it again.
+Files live in `~/.gh-md/<owner>/<repo>/{issues,pulls,discussions}/<number>.md`. Override the root with `GH_MD_ROOT` — set it per project when you want the mirror scoped to a workspace. This repo's upstreams, `w3c-cg/atag` and `w3c/wcag3`, are already mirrored under `local/upstream/gh-md/` by `just sync-upstream`; see [the skill](../SKILL.md) before pulling them again.
 
 ## Workflow
 
