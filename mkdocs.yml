@@ -220,12 +220,15 @@ nav:
           - knowledge-base/atag-wg/README.md
       - ATAG CG:
           - knowledge-base/atag-cg/README.md
+          - Use cases and requirements draft: knowledge-base/atag-cg/ucr.md
+          - ATAG 2.0 review findings: knowledge-base/atag-cg/atag-2-review.md
       - WCAG: knowledge-base/wcag.md
       - Authoring tools: knowledge-base/authoring-tools.md
   - CG contributions:
       - cg-contributions/README.md
-      - WCAG 3 provisions review: cg-contributions/wcag-3-provisions-review.md
-      - WCAG 3 provisions relevance: cg-contributions/wcag-3-provisions-relevance.md
+      - Decisions and open questions: cg-contributions/open-questions.md
+      - WCAG 3 provisions review: cg-contributions/wcag3-provisions-review/wcag-3-provisions-review.md
+      - WCAG 3 provisions relevance: cg-contributions/wcag3-provisions-review/wcag-3-provisions-relevance.md
       - Contribution ideas:
           - cg-contributions/contribution-ideas/README.md
           - Automated audits: cg-contributions/contribution-ideas/automated-audits.md

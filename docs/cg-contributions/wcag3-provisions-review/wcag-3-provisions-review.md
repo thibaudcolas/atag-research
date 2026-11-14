@@ -34,4 +34,4 @@ The exercise covers the ATAG relationship to content requirements only, equivale
 - **Methods are unsettled.** AGWG has not published a format for WCAG 3 methods. One method may satisfy several provisions, and meeting a provision may need both the authoring tool capability and the author's action (Lisa Liskovoi, Mitchell Evan).
 - **Conformance testing is out of scope for now.** Identifying ATAG as a WCAG method should not widen WCAG testing, but could open the door to an ATAG conformance evaluation (Charles Hall, Miriam Fukushima).
 
-The group also wants ATAG to be named in WCAG 3 where relevant, because vendors and authors look to WCAG rather than ATAG, and authoring tools shape conformance from the start. See [ATAG CG](../knowledge-base/atag-cg/README.md#status) for where this fits among CG work items.
+The group also wants ATAG to be named in WCAG 3 where relevant, because vendors and authors look to WCAG rather than ATAG, and authoring tools shape conformance from the start. See [ATAG CG](../../knowledge-base/atag-cg/README.md#status) for where this fits among CG work items.

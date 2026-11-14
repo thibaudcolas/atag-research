@@ -21,11 +21,13 @@ The working group does not replace the CG. The ATAG CG stays in place as the pla
 - **[Use Cases and Requirements](https://w3c-cg.github.io/atag/docs/ucr/)**: first published draft, October 2026. Gaps remain, notably around AI.
 - **ATAG 2.0 review**: Parts A and B reviewed guideline by guideline, May–July 2026. Output is in the [wiki](https://github.com/w3c-cg/atag/wiki), not the specification.
 - **Gap analysis and research reports**: planned, not started.
-- **[WCAG 3](https://www.w3.org/TR/wcag-3.0/) provision mapping**: started at TPAC 2026 after a session with the [Accessibility Guidelines Working Group (AGWG)](https://www.w3.org/groups/wg/ag/). Members classify each WCAG 3 provision by its relationship to ATAG, reusing the group's [WCAG 3 Provisions spreadsheet](../../cg-contributions/wcag-3-provisions-review.md) exercise. The goal is alignment, not conformance testing: ATAG methods, supplemental ATAG references, or informative content that WCAG could name (Wendy Reid, Miriam Fukushima, [13 November 2026](https://w3c-cg.github.io/atag/minutes/minutes_Nov13_2026)).
+- **[WCAG 3](https://www.w3.org/TR/wcag-3.0/) provision mapping**: started at TPAC 2026 after a session with the [Accessibility Guidelines Working Group (AGWG)](https://www.w3.org/groups/wg/ag/). Members classify each WCAG 3 provision by its relationship to ATAG, reusing the group's [WCAG 3 Provisions spreadsheet](../../cg-contributions/wcag3-provisions-review/wcag-3-provisions-review.md) exercise. The goal is alignment, not conformance testing: ATAG methods, supplemental ATAG references, or informative content that WCAG could name (Wendy Reid, Miriam Fukushima, [13 November 2026](https://w3c-cg.github.io/atag/minutes/minutes_Nov13_2026)).
 - **Open**: where AI guidance belongs, and the boundaries between authoring tools, content, user agents, and agents.
 - **Handoff to the working group**: how CG output such as the Use Cases and Requirements draft is frozen and handed over, and what the CG works on once the working group exists (Wendy Reid, Rémi Bétin, [13 November 2026](https://w3c-cg.github.io/atag/minutes/minutes_Nov13_2026)).
 
 The chair describes the CG as "the incubator and the research", because the CG cannot publish specifications. That role survives the creation of the working group, which the charter calls an incubator relationship. Check the [group page](https://www.w3.org/community/atag/) for current status.
+
+Notes on the group's own documents: [Use cases and requirements draft](ucr.md) and [ATAG 2.0 review findings](atag-2-review.md). The workspace's register of what is settled and what is open is in [Decisions and open questions](../../cg-contributions/open-questions.md).
 
 ## Resources
 

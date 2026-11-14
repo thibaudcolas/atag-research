@@ -22,4 +22,4 @@ Not private, just informal notes for personal reference and brainstorming.
     - Degree of relevance
   - Types of authoring tools? Shared definition?
 
-The proposed relationship values and open questions from this meeting are written up in [WCAG 3 provisions review](wcag-3-provisions-review.md).
+The proposed relationship values and open questions from this meeting are written up in [WCAG 3 provisions review](wcag3-provisions-review/wcag-3-provisions-review.md).
