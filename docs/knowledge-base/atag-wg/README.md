@@ -58,7 +58,7 @@ All participants follow the W3C [Code of Conduct](https://www.w3.org/policies/co
 
 ## Working in public
 
-Technical work happens in the [w3c/atag GitHub repository](https://github.com/w3c/atag), which the public can read and contribute to. Minutes are archived publicly, and the group may use a Member-only mailing list for administrative matters. Meetings themselves are not open to the public.
+Technical work will happen in a w3c/atag GitHub repository, named in the [proposed charter](https://www.w3.org/2026/11/proposed-atag-wg-charter.html#public-github), which the public will be able to read and contribute to. Minutes are archived publicly, and the group may use a Member-only mailing list for administrative matters. Meetings themselves are not open to the public.
 
 Deliverables use the [W3C Document license](https://www.w3.org/copyright/document-license/). The group operates under the [W3C Patent Policy](https://www.w3.org/policies/patent-policy/) (version of 15 May 2025), with Royalty-Free licensing.
 
@@ -94,9 +94,9 @@ The CG's charter and its review of ATAG 2.0 predate the working group. Where CG 
 
 ## Resources
 
-**Public materials**: [Proposed charter](https://www.w3.org/2026/11/proposed-atag-wg-charter.html), [charter draft source](https://github.com/w3c/charter-drafts/blob/main/2026/atag-wg.html), [group page](https://www.w3.org/groups/wg/atag/), [group calendar](https://www.w3.org/groups/wg/atag/calendar/), and the [Advisory Committee ballot](https://www.w3.org/wbs/33280/atag-wg-2026/) (Member-only).
+**Public materials**: [Proposed charter](https://www.w3.org/2026/11/proposed-atag-wg-charter.html), [charter draft source](https://github.com/w3c/charter-drafts/blob/gh-pages/2026/atag-wg.html), [group page](https://www.w3.org/groups/wg/atag/), [group calendar](https://www.w3.org/groups/wg/atag/calendar/), and the [Advisory Committee ballot](https://www.w3.org/wbs/33280/atag-wg-2026/) (Member-only).
 
-**Working in the repository**: [Repository](https://github.com/w3c/atag), [issues](https://github.com/w3c/atag/issues), and the [publications page](https://www.w3.org/groups/wg/atag/publications/).
+**Working in the repository**: a w3c/atag repository, named in the [proposed charter](https://www.w3.org/2026/11/proposed-atag-wg-charter.html#public-github) and not created yet, and the [publications page](https://www.w3.org/groups/wg/atag/publications/).
 
 **Background**: [Charter history](https://www.w3.org/groups/wg/atag/charters/). The previous ATAG Working Group charter ran from 19 December 1997 to 5 November 2015.
 

@@ -1,10 +1,17 @@
 # Link checking configuration for lychee – https://lychee.cli.rs
 # `just check-links` checks local links; `just check-external-links` checks HTTP(S).
 
-# Sites that block automated checks (401/403/bot detection).
+# Sites that block automated checks (401/403/bot detection), or that automated
+# TLS verification cannot reach.
 exclude = [
   'https://x\.com/.*',
   'https://www\.linkedin\.com/.*',
+  # docs/knowledge-base/atag-wg/README.md: the server omits its intermediate
+  # certificate, so strict TLS checks fail while browsers recover the chain.
+  'https://www\.arso-oran\.org/.*',
+  # docs/knowledge-base/atag-wg/README.md: JISC answers 502 from a maintenance
+  # page. Remove once the site is back, and check it again.
+  'https://www\.jisc\.go\.jp/.*',
   # Add here: known-broken sources in different files (mention which)
 ]
 

@@ -2,7 +2,7 @@
 
 From May to July 2026 the group reviewed [ATAG 2.0](https://www.w3.org/TR/ATAG20/) guideline by guideline, looking for "opportunities or gaps" before drafting (Wendy Reid, [31 July 2026](https://w3c-cg.github.io/atag/minutes/minutes_Jul31_2026)). Part A, the authoring tool user interface, was finished on 19 June. Part B, accessible content, ran from 17 July to 31 July.
 
-Part A findings are in the [group wiki](https://github.com/w3c-cg/atag/wiki/Review-of-ATAG-2.0-for-areas-needing-extension-revision); Part B findings exist only in the [minutes](https://w3c-cg.github.io/atag/minutes/). No specification edits have been made.
+Part A findings are in the [group wiki](https://github.com/w3c-cg/atag/wiki/Review-of-ATAG-2.0-for-areas-needing-extension-revision); Part B findings exist only in the [minutes](https://w3c-cg.github.io/atag/). No specification edits have been made.
 
 ## Editorial updates
 
