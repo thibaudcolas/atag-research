@@ -30,16 +30,18 @@ Initialization installs Python and pnpm dependencies and downloads the pinned Va
 
 #### Upstream sources
 
-Research depends on the current state of the upstream [w3c-cg/atag](https://github.com/w3c-cg/atag) and [w3c/wcag3](https://github.com/w3c/wcag3) repositories, their issues, pull requests, discussions, and wikis. `just sync-upstream` mirrors them read-only into the git-ignored `local/upstream/` directory, which research notes read from:
+Research depends on the current state of the upstream [w3c-cg/atag](https://github.com/w3c-cg/atag) and [w3c/wcag3](https://github.com/w3c/wcag3) repositories, their issues, pull requests, discussions, and wikis, and the [We4Authors](https://github.com/mgifford/We4Authors) site source. `just sync-upstream` mirrors them read-only into the git-ignored `local/upstream/` directory, which research notes read from:
 
-| Path                                | Contents                                               |
-| ----------------------------------- | ------------------------------------------------------ |
-| `local/upstream/atag/`              | ATAG code and minutes, checked out on upstream `main`  |
-| `local/upstream/gh-md/w3c-cg/atag/` | ATAG issues, pull requests, and discussions            |
-| `local/upstream/atag-wiki/`         | ATAG wiki pages                                        |
-| `local/upstream/wcag3/`             | WCAG 3 code and drafts, checked out on upstream `main` |
-| `local/upstream/gh-md/w3c/wcag3/`   | WCAG 3 issues, pull requests, and discussions          |
-| `local/upstream/wcag3-wiki/`        | WCAG 3 wiki pages                                      |
+| Path                                        | Contents                                               |
+| ------------------------------------------- | ------------------------------------------------------ |
+| `local/upstream/atag/`                      | ATAG code and minutes, checked out on upstream `main`  |
+| `local/upstream/gh-md/w3c-cg/atag/`         | ATAG issues, pull requests, and discussions            |
+| `local/upstream/atag-wiki/`                 | ATAG wiki pages                                        |
+| `local/upstream/wcag3/`                     | WCAG 3 code and drafts, checked out on upstream `main` |
+| `local/upstream/gh-md/w3c/wcag3/`           | WCAG 3 issues, pull requests, and discussions          |
+| `local/upstream/wcag3-wiki/`                | WCAG 3 wiki pages                                      |
+| `local/upstream/we4authors/`                | We4Authors site source, checked out on upstream `main` |
+| `local/upstream/gh-md/mgifford/We4Authors/` | We4Authors issues and pull requests, if any            |
 
 Install the tools the sync uses beyond `git`, which is already required:
 

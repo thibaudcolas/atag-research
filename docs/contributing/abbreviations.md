@@ -50,6 +50,7 @@
 [ATAG#37]: https://github.com/w3c-cg/atag/discussions/37 "Machine-checkable success criteria: an implementer's perspective"
 [ATAG#38]: https://github.com/w3c-cg/atag/discussions/38 'What do the "Relationship to ATAG" values mean in the WCAG 3 Provisions spreadsheet exercise?'
 [ATAG#39]: https://github.com/w3c-cg/atag/pull/39 "Add november 13 minutes to index"
+[ATAG#40]: https://github.com/w3c-cg/atag/issues/40 "Address financial cost of accessibility in authoring tools"
 
 <!-- END upstream references -->
 

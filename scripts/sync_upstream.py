@@ -19,6 +19,7 @@ A source without a `reference_prefix`, such as wcag3, is mirrored but not regist
 
 Safe to re-run: every step updates an existing mirror in place.
 Local edits in a code checkout are kept, and reported rather than discarded.
+Pass `--only <repo>` to sync a single source.
 """
 
 import argparse
@@ -50,11 +51,17 @@ class Source:
     repo: str
     directory: str
     reference_prefix: str | None
+    branch: str = "main"
 
     @property
     def url(self) -> str:
         """HTTPS URL of the repository."""
         return f"https://github.com/{self.repo}.git"
+
+    @property
+    def upstream(self) -> str:
+        """The remote-tracking ref of the default branch."""
+        return f"origin/{self.branch}"
 
     @property
     def wiki_url(self) -> str:
@@ -80,6 +87,7 @@ class Source:
 SOURCES = (
     Source(repo="w3c-cg/atag", directory="atag", reference_prefix="ATAG"),
     Source(repo="w3c/wcag3", directory="wcag3", reference_prefix=None),
+    Source(repo="mgifford/We4Authors", directory="we4authors", reference_prefix=None),
 )
 
 
@@ -150,14 +158,16 @@ def sync_repository(source: Source, reclone: bool) -> None:
         run("git", "clone", "--quiet", source.url, checkout)
 
     # Fast-forward only: never merge, rebase, or check out over uncommitted work.
-    git(checkout, "merge", "--ff-only", "--quiet", "origin/main")
+    git(checkout, "checkout", "--quiet", source.branch)
+    git(checkout, "merge", "--ff-only", "--quiet", source.upstream)
 
     status = git(checkout, "-c", "status.branch=false", "status", "--short")
     if status:
         say(f"Kept local changes in {checkout.relative_to(ROOT)}:\n{status}")
     else:
         say(
-            f"{source.repo}: main at {git(checkout, 'rev-parse', '--short', 'origin/main')}"
+            f"{source.repo}: {source.branch} at "
+            f"{git(checkout, 'rev-parse', '--short', source.upstream)}"
         )
 
 
@@ -214,12 +224,15 @@ def sync_wiki(source: Source, has_wiki: str) -> None:
         say(
             f"{source.repo} wiki: {branch} at {git(wiki, 'rev-parse', '--short', f'origin/{branch}')}"
         )
-    else:
-        run("git", "clone", "--quiet", source.wiki_url, wiki)
-        branch = git(wiki, "rev-parse", "--abbrev-ref", "HEAD")
-        say(
-            f"{source.repo} wiki: {branch} at {git(wiki, 'rev-parse', '--short', 'HEAD')}"
-        )
+        return
+    # An enabled wiki has no repository until a first page is saved, so check the remote exists.
+    probe = run("git", "ls-remote", "--quiet", source.wiki_url, check=False)
+    if probe.returncode != 0:
+        say(f"Skipped the {source.repo} wiki: no wiki pages exist yet.")
+        return
+    run("git", "clone", "--quiet", source.wiki_url, wiki)
+    branch = git(wiki, "rev-parse", "--abbrev-ref", "HEAD")
+    say(f"{source.repo} wiki: {branch} at {git(wiki, 'rev-parse', '--short', 'HEAD')}")
 
 
 # ---- Upstream reference links ------------------------------------------------------------
@@ -316,6 +329,11 @@ def main() -> None:
         help="replace a code checkout whose origin does not point at its upstream repository",
     )
     parser.add_argument(
+        "--only",
+        metavar="REPO",
+        help="sync only the source with this repository, leaving the other mirrors untouched",
+    )
+    parser.add_argument(
         "--references-only",
         action="store_true",
         help="only regenerate the reference links from the existing mirror, offline",
@@ -326,12 +344,21 @@ def main() -> None:
         update_references()
         return
 
+    sources: tuple[Source, ...] = SOURCES
+    if options.only:
+        sources = tuple(source for source in SOURCES if source.repo == options.only)
+        if not sources:
+            known = ", ".join(source.repo for source in SOURCES)
+            raise SystemExit(
+                f"error: {options.only} is not a source in SOURCES: {known}"
+            )
+
     if shutil.which("git") is None:
         raise SystemExit("git is required: https://git-scm.com/downloads")
 
     MIRROR.mkdir(parents=True, exist_ok=True)
     pulled = False
-    for source in SOURCES:
+    for source in sources:
         say(f"Syncing {source.repo} into local/upstream/")
         has_wiki = capability(source.repo, "has_wiki")
         has_issues = capability(source.repo, "has_issues")

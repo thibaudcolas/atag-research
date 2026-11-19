@@ -14,7 +14,7 @@ Each section folder uses a `README.md` as its landing page, so it also renders w
 
 ### Upstream sources
 
-`local/` holds unpublished source material and is git-ignored. `just sync-upstream` refreshes `local/upstream/` from [w3c-cg/atag](https://github.com/w3c-cg/atag): a read-only clone of the repository, the gh-md mirror of issues, pull requests, and discussions, and a clone of the wiki. Research notes cite the live upstream URLs and draw on these copies; nothing in `local/` is published or committed. The `upstream-sync` skill drives the sync and the follow-up documentation updates, and readiness is documented under [Upstream sources](README.md#upstream-sources).
+`local/` holds unpublished source material and is git-ignored. `just sync-upstream` refreshes `local/upstream/` from [w3c-cg/atag](https://github.com/w3c-cg/atag), [w3c/wcag3](https://github.com/w3c/wcag3), and [mgifford/We4Authors](https://github.com/mgifford/We4Authors): a read-only clone of each repository, the gh-md mirror of issues, pull requests, and discussions, and a clone of the wiki. Research notes cite the live upstream URLs and draw on these copies; nothing in `local/` is published or committed. The `upstream-sync` skill drives the sync and the follow-up documentation updates, and readiness is documented under [Upstream sources](README.md#upstream-sources).
 
 <!-- Update the layers above to match your project, and keep them in sync with `docs/index.md` and `docs/index.md`. -->
 
