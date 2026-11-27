@@ -14,7 +14,7 @@ Benchmarking accessibility in audits / testing / coding. References in [Benchmar
 
 ### Agentic use cases
 
-Agentic creator or consumer use cases for the [Use Cases and Requirements](../../knowledge-base/atag-cg/ucr.md) draft, which has none.
+Agentic creator or consumer use cases for the [Use Cases and Requirements](../../knowledge-base/atag-cg/ucr.md) draft, which has none. Six candidate scenarios, the requirements they imply, and the draft's structural constraints are in [Agentic use cases](agentic-use-cases.md).
 
 ### Human agency and levels of author control
 
